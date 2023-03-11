@@ -5,12 +5,6 @@ title: "[net] preconnect"
 
 # [net] preconnect
 
-> @ [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel/preconnect) - preconnect
-
-> @ [juejin](https://juejin.cn/post/6915204591730556935#heading-0) - preload、prefetch、preconnect 和 dns-prefetch 知多少
-
-> @[stackoverflow](https://stackoverflow.com/questions/47273743/preconnect-vs-dns-prefetch-resource-hints) - preconnect vs dns-prefetch resource hints
-
 ## Intro
 
 The preconnect keyword for the rel attribute of the rel element is a hint to browsers that the user is likely to need resources from the target resource's origin, and therefore the browser can likely improve the user experience by preemptively initiating a connection to that origin.
@@ -36,3 +30,10 @@ The practical difference is hence, if you know that a server fetch will happen f
 
 + If the traffic on your website is small though, it should not be impacted too much by this difference, so preconnect is probably a good fit for low-traffic websites, regardless of the things mentioned before.
 
+## Reference
+
++ @ [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel/preconnect) - preconnect
+
++ @ [juejin](https://juejin.cn/post/6915204591730556935#heading-0) - preload、prefetch、preconnect 和 dns-prefetch 知多少
+
++ @[stackoverflow](https://stackoverflow.com/questions/47273743/preconnect-vs-dns-prefetch-resource-hints) - preconnect vs dns-prefetch resource hints
