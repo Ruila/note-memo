@@ -5,6 +5,10 @@ title: "[JS] Promise"
 
 # [JS] Promise
 
+## Intro
+
+The Promise object represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
+
 ## Promise with MacroTask and MicroTask
 
 Immediately after every macrotask, the engine executes all tasks from microtask queue, prior to running any other macrotasks or rendering or anything else.
@@ -58,3 +62,4 @@ the history in microtask will be:
 ## Reference
 
 + @ [javascript.info](https://javascript.info/event-loop#macrotasks-and-microtasks)
++ @ [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) - Promise
