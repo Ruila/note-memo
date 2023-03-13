@@ -1,9 +1,9 @@
 ---
 sidebar_position: 1
-title: "[Http] Idempotent"
+title: "[net] Idempotent"
 ---
 
-# [Http] Idempotent
+# [net] Idempotent
 
 ## Intro
 

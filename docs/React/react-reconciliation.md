@@ -7,7 +7,7 @@ title: "[React] Reconciliation"
 
 :::caution
 
-This is not original content
+This is not original content, but just a note from articles I read.
 
 :::
 
