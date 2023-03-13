@@ -56,3 +56,4 @@ TLS (Transport Layer Security) is just an updated, more secure, version of SSL.
 
 + @ [MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview#components_of_http-based_systems) - HTTP
 + @ [techtarget](https://www.techtarget.com/searchsoftwarequality/definition/HTTPS) - Hypertext Transfer Protocol Secure (HTTPS)
++ @ [digicert](https://www.websecurity.digicert.com/security-topics/what-is-ssl-tls-https)
