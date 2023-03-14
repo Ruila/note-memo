@@ -5,6 +5,12 @@ title: "[JS] closure"
 
 # [JS] closure
 
+:::caution
+
+This is not original content, but just a note from articles I read.
+
+:::
+
 ## Intro
 
 A **closure** is the combination of a function bundled together (enclosed) with references to its surrounding state (the **lexical environment**).

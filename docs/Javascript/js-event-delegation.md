@@ -5,6 +5,12 @@ title: "[JS] event delegation"
 
 # [JS] event delegation
 
+:::caution
+
+This is not original content, but just a note from articles I read.
+
+:::
+
 ## Intro
 
 Event delegation is a way which benefit from **event bubbling** can reduce the number of listeners.

@@ -5,6 +5,12 @@ title: "[JS] prototype chain"
 
 # [JS] Inheritance and the prototype chain
 
+:::caution
+
+This is not original content, but just a note from articles I read.
+
+:::
+
 ## Intro
 
 When it comes to inheritance, **JavaScript only has one construct**: **objects**.

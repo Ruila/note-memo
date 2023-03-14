@@ -5,6 +5,12 @@ title: "[JS] Promise"
 
 # [JS] Promise
 
+:::caution
+
+This is not original content, but just a note from articles I read.
+
+:::
+
 ## Intro
 
 The Promise object represents the eventual completion (or failure) of an asynchronous operation and its resulting value.

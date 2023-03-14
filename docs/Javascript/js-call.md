@@ -5,6 +5,12 @@ title: "[JS] call"
 
 # [JS] call
 
+:::caution
+
+This is not original content, but just a note from articles I read.
+
+:::
+
 ## Intro
 
 The call() method **calls the function** with a given this value and arguments provided individually.

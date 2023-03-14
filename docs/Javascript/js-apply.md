@@ -5,6 +5,12 @@ title: "[JS] apply"
 
 # [JS] apply
 
+:::caution
+
+This is not original content, but just a note from articles I read.
+
+:::
+
 ## Intro
 
 The apply() method **calls the specified function** with a given this value, and arguments provided as an array.
