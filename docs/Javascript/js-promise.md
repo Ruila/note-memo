@@ -13,7 +13,7 @@ The Promise object represents the eventual completion (or failure) of an asynchr
 
 Immediately after every macrotask, the engine executes all tasks from microtask queue, prior to running any other macrotasks or rendering or anything else.
 
-### Example
+### Example 1
 
 ```javascript
 setTimeout(()=>{ // 1. add to Web APIs queue, then it will be moved to macrotask.
@@ -59,7 +59,34 @@ new Promise((resolve, reject) => {
 the history in microtask will be:
 2 -> 4 -> 8 -> 6 -> 5 -> 9 -> 10
 
+### Example 2
+
+```javascript
+setTimeout(() => { // first settimeout
+  console.log('timer1');
+  Promise.resolve().then(() => { // is add to microtask queue when execute the first settimeout as a macrotask.
+    console.log('promise')
+  })
+}, 0)
+setTimeout(() => { // second settimeout
+  console.log('timer2')
+}, 0)
+console.log('start')
+```
+
+result:
+
+```javascript
+// 'start'
+// 'timer1'
+// 'promise'
+// 'timer2'
+```
+
+
+
 ## Reference
 
 + @ [javascript.info](https://javascript.info/event-loop#macrotasks-and-microtasks)
 + @ [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) - Promise
++ @ [juejin](https://juejin.cn/post/6844904077537574919)
