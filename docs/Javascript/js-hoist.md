@@ -14,11 +14,16 @@ example:
 ```javascript
 console.info(student);
 console.info(demo);
+console.info(declarreFunc);
 function demo() {
 	console.info("123")
 }
 
 var student = "John";
+
+var declarreFunc = function (name) {
+    console.log('declarreFunc')
+}
 ```
 print:
 ```javascript
@@ -26,6 +31,7 @@ print:
 // function demo() {
 //     console.info("123")
 // }
+// undefined
 ```
 
 ## let, const and class are non-hoisting !?
