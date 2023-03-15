@@ -17,12 +17,12 @@ The reconciliation process makes React work faster. Reconciliation is the proces
 
 ## Rendering
 
-The term **rendering** in React can closely be identified as making or becoming. In traditional rendering, Browser does the following tasks:
+The term **rendering** in React can closely be identified as making or becoming. In **traditional rendering**, Browser does the following tasks:
 
-+ Creates a DOM (Document Object Model) represented by a tree structure.
-+ Renders any new data to the DOM even if data is similar to previous ones.
++ **Creates a DOM (Document Object Model) represented by a tree structure**.
++ **Renders any new data to the DOM even if data is similar to previous ones**.
 
-This rendering by Browser has a sequence of steps and is rather costly in nature. The concept of Virtual DOM used by React makes rendering much faster.
+This rendering by Browser has a sequence of steps and is rather costly in nature. The concept of **Virtual DOM** used by React makes rendering much faster.
 
 ## How do React do in the process of Reconciliation ?
 
@@ -52,7 +52,7 @@ The following actions take place in React:
 Some concepts used by this Algorithm are:
 
 1. Two elements of different types will produce different trees.
-2. Breadth-First Search (BFS) is applied because if a node is found as changed, it will re-render the entire subtree hence Depth First Approach is not exactly optimal. 
+2. **Breadth-First Search (BFS)** is applied because if a node is found as changed, it will re-render the entire subtree hence Depth First Approach is not exactly optimal. 
 3. When comparing two elements of the same type, keep the underlying node as same and only update changes in attributes or styles.
 4. React uses optimizations so that a minimal difference can be calculated in O(N) efficiently using this Algorithm.
 
