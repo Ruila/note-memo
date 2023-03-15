@@ -89,4 +89,4 @@ To stop the bubbling and prevent handlers on the current element from running, t
 
 ## Reference
 
-+ @ [summer](https://www.cythilya.tw/2015/07/08/javascript-event-delegation/) - Event Delegation 事件委派
++ @ [javascript.info](https://javascript.info/bubbling-and-capturing#bubbling) - Bubbling and capturing
