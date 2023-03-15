@@ -35,6 +35,16 @@ var c = new Foo(30);
 ( new Foo ).prototype === undefined
 ```
 
+### Example
+
+![img](./img/prototype-demo.png)
+
+Animal.prototype.constructor is itself.
+
+cat.\__proto__.constructor is Animal
+
+cat.constructor is Animal
+
 ## Reference
 
 + @ [dmitrysoshnikov](http://dmitrysoshnikov.com/ecmascript/javascript-the-core/) - JavaScript. The Core.
