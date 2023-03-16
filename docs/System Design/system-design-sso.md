@@ -19,4 +19,4 @@ This is not original content, but just a note from articles I read.
 
 ## Reference
 
-+ @ [AlexXu](https://blog.bytebytego.com/p/what-is-sso-episode-7) - Event Delegation 事件委派
++ @ [AlexXu](https://blog.bytebytego.com/p/what-is-sso-episode-7) - What is SSO (Episode 7)
