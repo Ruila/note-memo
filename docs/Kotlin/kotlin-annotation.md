@@ -79,4 +79,6 @@ annotation class Prometheus(
 
 ## Reference
 
-+ @ [kotest](https://github.com/kotest/kotest/blob/master/documentation/docs/extensions/instant.md)
++ @[wangkuiwu](http://wangkuiwu.github.io/2012/03/03/annotation/) - Annotation
++ @[YuAn](https://medium.com/@corrupt003/java-kotlin-android-annotation-67f78b820ce4) - Java/Kotlin/Android Annotation
++ @[developer.android.com](https://developer.android.com/reference/kotlin/java/lang/annotation/RetentionPolicy)
