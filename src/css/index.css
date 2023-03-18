@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "noto";
+    src: local("noto"),
+    url("./NotoSans-Regular.ttf") format("truetype");
+    font-weight: bold;
+}
+
+.to-be-continued {
+    font-family: "noto";
+    font-size: 40px;
+    font-weight: 700;
+    z-index: 1;
+}

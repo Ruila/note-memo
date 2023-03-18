@@ -13,14 +13,14 @@ export const HomePageAnimation = () => {
             1000
         );
 
-        const renderer = new THREE.WebGLRenderer({ canvas: canvasRef.current });
+        const renderer = new THREE.WebGLRenderer({canvas: canvasRef.current});
 
         renderer.setSize(window.innerWidth, window.innerHeight);
         renderer.setPixelRatio(window.devicePixelRatio);
-        renderer.setClearColor( 0xffffff, 1 );
+        renderer.setClearColor(0xffffff, 1);
 
-        const geometry = new THREE.SphereGeometry(5, 30,30);
-        const material = new THREE.PointsMaterial({ color: 0x000, sizeAttenuation: false, size: 1});
+        const geometry = new THREE.SphereGeometry(5, 30, 30);
+        const material = new THREE.PointsMaterial({color: 0x000, sizeAttenuation: false, size: 1});
         const sphere = new THREE.Points(geometry, material);
         scene.add(sphere);
         camera.position.z = 8;
@@ -31,6 +31,7 @@ export const HomePageAnimation = () => {
             requestAnimationFrame(animate);
             renderer.render(scene, camera)
         }
+
         animate();
 
         // Cleanup on unmount, otherwise stuff will linger in GPU
@@ -42,5 +43,8 @@ export const HomePageAnimation = () => {
         };
     }, []);
 
-    return <canvas ref={canvasRef} />;
+    return <div style={{display: "flex", alignItems: "center", justifyContent: "center", minHeight: "600px"}}>
+        <div className="to-be-continued">To Be Continued</div>
+        <canvas ref={canvasRef} style={{position: "absolute", zIndex: "0"}}/>
+    </div>;
 }
