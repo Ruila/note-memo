@@ -1,5 +1,6 @@
 import React, {useEffect, useRef} from 'react'
 import * as THREE from 'three';
+import {OrbitControls} from "three/examples/jsm/controls/OrbitControls";
 
 export const HomePageAnimation = () => {
     const canvasRef = useRef();
@@ -14,6 +15,7 @@ export const HomePageAnimation = () => {
         );
 
         const renderer = new THREE.WebGLRenderer({canvas: canvasRef.current});
+        const controls = new OrbitControls( camera, renderer.domElement );
 
         renderer.setSize(window.innerWidth, window.innerHeight);
         renderer.setPixelRatio(window.devicePixelRatio);
@@ -23,11 +25,11 @@ export const HomePageAnimation = () => {
         const material = new THREE.PointsMaterial({color: 0x000, sizeAttenuation: false, size: 2});
         const sphere = new THREE.Points(geometry, material);
         scene.add(sphere);
-        camera.position.z = 3;
-
+        camera.position.z = 8;
         function animate() {
-            // sphere.rotation.x += 0.005;
-            sphere.rotation.y += 0.005;
+            sphere.rotation.x += 0.005;
+            sphere.rotation.y += 0.01;
+            controls.update();
             requestAnimationFrame(animate);
             renderer.render(scene, camera)
         }
