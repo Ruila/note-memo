@@ -9,6 +9,17 @@ title: "[net] CORS"
 
 Cross-Origin Resource Sharing (CORS) is an HTTP-header based mechanism that allows a server to indicate any origins (domain, scheme, or port) other than its own from which a browser should permit loading resources.
 
+## What requests use CORS?
+
+This cross-origin sharing standard can enable cross-origin HTTP requests for:
+
++ Invocations of the **XMLHttpRequest** or **Fetch APIs**, as discussed above.
++ Web Fonts (for cross-domain font usage in @font-face within CSS), so that servers can deploy TrueType fonts that can only be loaded cross-origin and used by web sites that are permitted to do so.
++ WebGL textures.
++ Images/video frames drawn to a canvas using drawImage().
++ CSS Shapes from images.
+
+
 ## Prefilght
 
 ### What is preflight?
