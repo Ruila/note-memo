@@ -1,0 +1,46 @@
+---
+sidebar_position: 1
+title: "[ThreeJS] OrbitContols"
+---
+
+# [ThreeJS] OrbitContols
+
+## OrbitContols
+
+Orbit controls allow the camera to orbit around a target.
+
+## Code Example
+
+```javascript
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+const renderer = new THREE.WebGLRenderer();
+renderer.setSize( window.innerWidth, window.innerHeight );
+document.body.appendChild( renderer.domElement );
+
+const scene = new THREE.Scene();
+
+const camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 1, 10000 );
+
+const controls = new OrbitControls( camera, renderer.domElement );
+
+//controls.update() must be called after any manual changes to the camera's transform
+camera.position.set( 0, 20, 100 );
+controls.update();
+
+function animate() {
+
+	requestAnimationFrame( animate );
+
+	// required if controls.enableDamping or controls.autoRotate are set to true
+	controls.update();
+
+	renderer.render( scene, camera );
+
+}
+```
+[Try to control the camera](/)
+
+## Reference
+
++ @ [threejs.org](https://threejs.org/docs/?q=OrbitControls#examples/en/controls/OrbitControls) - OrbitControls
