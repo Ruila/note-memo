@@ -19,11 +19,11 @@ export const HomePageAnimation = () => {
         renderer.setPixelRatio(window.devicePixelRatio);
         renderer.setClearColor(0xffffff, 1);
 
-        const geometry = new THREE.SphereGeometry(5, 30, 30);
-        const material = new THREE.PointsMaterial({color: 0x000, sizeAttenuation: false, size: 1.5});
+        const geometry = new THREE.SphereGeometry(5, 60, 60);
+        const material = new THREE.PointsMaterial({color: 0x000, sizeAttenuation: false, size: 2});
         const sphere = new THREE.Points(geometry, material);
         scene.add(sphere);
-        camera.position.z = 8;
+        camera.position.z = 3;
 
         function animate() {
             // sphere.rotation.x += 0.005;
