@@ -5,6 +5,12 @@ title: "[net] XSS"
 
 # [net] XSS
 
+:::caution
+
+This is not original content, but just a note from articles I read.
+
+:::
+
 ## What is XSS?
 
 XSS stands for Cross Site Scripting and it is injection type of attack.
@@ -44,4 +50,4 @@ The browsers **do not send part of URL after # to server**, so they pass it dire
 
 ## Reference
 
-+ @ [MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS#what_requests_use_cors) - CORS
++ @ [dev.to](https://dev.to/maleta/cors-xss-and-csrf-with-examples-in-10-minutes-35k3)
