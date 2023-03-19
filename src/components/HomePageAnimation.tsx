@@ -20,7 +20,7 @@ export const HomePageAnimation = () => {
         renderer.setClearColor(0xffffff, 1);
 
         const geometry = new THREE.SphereGeometry(5, 30, 30);
-        const material = new THREE.PointsMaterial({color: 0x000, sizeAttenuation: false, size: 1});
+        const material = new THREE.PointsMaterial({color: 0x000, sizeAttenuation: false, size: 1.5});
         const sphere = new THREE.Points(geometry, material);
         scene.add(sphere);
         camera.position.z = 8;
