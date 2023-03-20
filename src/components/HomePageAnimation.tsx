@@ -1,10 +1,13 @@
 import React, {useEffect, useRef} from 'react'
 import * as THREE from 'three';
 import {OrbitControls} from "three/examples/jsm/controls/OrbitControls";
+import {FontLoader} from "three/examples/jsm/loaders/FontLoader";
+import {TextGeometry} from "three/examples/jsm/geometries/TextGeometry";
+import useBaseUrl from "@docusaurus/useBaseUrl";
 
 export const HomePageAnimation = () => {
     const canvasRef = useRef();
-
+    let fontFileUrl = `${window.location.origin}${useBaseUrl('/helvetiker_bold.typeface.json')}`
     useEffect(() => {
         const scene = new THREE.Scene();
         const camera = new THREE.PerspectiveCamera(
@@ -21,11 +24,27 @@ export const HomePageAnimation = () => {
         renderer.setPixelRatio(window.devicePixelRatio);
         renderer.setClearColor(0xffffff, 1);
 
-        const geometry = new THREE.SphereGeometry(5, 60, 60);
+        const geometry = new THREE.SphereGeometry(10, 60, 60);
         const material = new THREE.PointsMaterial({color: 0x000, sizeAttenuation: false, size: 2});
         const sphere = new THREE.Points(geometry, material);
-        scene.add(sphere);
-        camera.position.z = 8;
+        let txtMesh: THREE.Mesh<TextGeometry, THREE.MeshBasicMaterial>;
+        const loader = new FontLoader();
+
+        loader.load(fontFileUrl, function ( font ) {
+            const textGeometry = new TextGeometry( 'To be continued', {
+                font: font,
+                size: 1,
+                height: 0,
+            } );
+            const txtMater = new THREE.MeshBasicMaterial({color: 0x000000});
+            txtMesh = new THREE.Mesh(textGeometry, txtMater);
+            textGeometry.computeBoundingBox()
+            textGeometry.center()
+            txtMesh.position.z = 0
+            scene.add(txtMesh);
+        } );
+        scene.add(sphere)
+        camera.position.z = 15;
         function animate() {
             sphere.rotation.x += 0.005;
             sphere.rotation.y += 0.01;
@@ -42,11 +61,10 @@ export const HomePageAnimation = () => {
             renderer.dispose();
             sphere.geometry.dispose();
             sphere.material.dispose();
+            txtMesh.geometry.dispose();
+            txtMesh.material.dispose();
         };
     }, []);
 
-    return <div style={{display: "flex", alignItems: "center", justifyContent: "center", minHeight: "600px"}}>
-        <div className="to-be-continued">To Be Continued</div>
-        <canvas ref={canvasRef} style={{position: "absolute", zIndex: "0"}}/>
-    </div>;
+    return <canvas ref={canvasRef}/>
 }
