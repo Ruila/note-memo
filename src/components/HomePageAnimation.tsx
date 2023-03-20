@@ -5,9 +5,11 @@ import {FontLoader} from "three/examples/jsm/loaders/FontLoader";
 import {TextGeometry} from "three/examples/jsm/geometries/TextGeometry";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 
+let baseUrl: string = "https://ruila.github.io";
+if (typeof window !== 'undefined') baseUrl = window.location.origin
 export const HomePageAnimation = () => {
     const canvasRef = useRef();
-    let fontFileUrl = `${window.location.origin}${useBaseUrl('/helvetiker_bold.typeface.json')}`
+    let fontFileUrl = `${baseUrl}${useBaseUrl('/helvetiker_bold.typeface.json')}`
     useEffect(() => {
         const scene = new THREE.Scene();
         const camera = new THREE.PerspectiveCamera(
@@ -18,7 +20,7 @@ export const HomePageAnimation = () => {
         );
 
         const renderer = new THREE.WebGLRenderer({canvas: canvasRef.current});
-        const controls = new OrbitControls( camera, renderer.domElement );
+        const controls = new OrbitControls(camera, renderer.domElement);
 
         renderer.setSize(window.innerWidth, window.innerHeight);
         renderer.setPixelRatio(window.devicePixelRatio);
@@ -30,21 +32,22 @@ export const HomePageAnimation = () => {
         let txtMesh: THREE.Mesh<TextGeometry, THREE.MeshBasicMaterial>;
         const loader = new FontLoader();
 
-        loader.load(fontFileUrl, function ( font ) {
-            const textGeometry = new TextGeometry( 'To be continued', {
+        loader.load(fontFileUrl, function (font) {
+            const textGeometry = new TextGeometry('To be continued', {
                 font: font,
                 size: 1,
                 height: 0,
-            } );
+            });
             const txtMater = new THREE.MeshBasicMaterial({color: 0x000000});
             txtMesh = new THREE.Mesh(textGeometry, txtMater);
             textGeometry.computeBoundingBox()
             textGeometry.center()
             txtMesh.position.z = 0
             scene.add(txtMesh);
-        } );
+        });
         scene.add(sphere)
         camera.position.z = 15;
+
         function animate() {
             sphere.rotation.x += 0.005;
             sphere.rotation.y += 0.01;
