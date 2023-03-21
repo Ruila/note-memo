@@ -7,7 +7,7 @@ title: "[Kotlin] How to mock time ?"
 
 ## with kotest
 
-If you want to mock LocalDateTime:
+If you want to mock **LocalDateTime**:
 
 ```
 val currentTime = LocalDateTime.now()
@@ -19,7 +19,7 @@ withConstantNow(currentTime) {
 }
 ```
 
-If you want to mock Instant: 
+If you want to mock **Instant**: 
 
 ```
 val currentTime = Instant.now()
