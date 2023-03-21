@@ -1,5 +1,4 @@
 ---
-sidebar_position: 1
 title: "[net] What happens when you type a URL in your web browser ?"
 ---
 

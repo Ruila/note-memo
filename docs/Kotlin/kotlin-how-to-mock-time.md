@@ -1,5 +1,4 @@
 ---
-sidebar_position: 1
 title: "[Kotlin] How to mock time ?"
 ---
 

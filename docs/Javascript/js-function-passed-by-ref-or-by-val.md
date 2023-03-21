@@ -1,5 +1,4 @@
 ---
-sidebar_position: 1
 title: "[JS] Params in function are passed by reference ? or by value ?"
 ---
 
