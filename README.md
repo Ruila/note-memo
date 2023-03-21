@@ -2,7 +2,7 @@
 
 Hi everyone, I'm William.
 
-This website record a lot of notes or article highlights from my programming life and articles I read.
+This [website](https://ruila.github.io/note-memo/) record a lot of notes or article highlights from my programming life and articles I read.
 
 Making a notes is helping me engage with the material more deeply, which can help you remember it better.
 
