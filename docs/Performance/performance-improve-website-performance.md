@@ -28,7 +28,7 @@ There are two aspects to this rule:
 
 Web page designs are getting richer and richer, which means more scripts, stylesheets, images, and Flash in the page.
 
-A first-time visitor to your page may have to make several HTTP requests, but by using the Expires header you make those components cacheable.
+A first-time visitor to your page may have to make several HTTP requests, but by using **the Expires header you make those components cacheable**.
 
 This avoids unnecessary HTTP requests on subsequent page views.
 
