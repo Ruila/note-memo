@@ -20,7 +20,7 @@ If you want to know more detail about the relation between DAO and Entity, pleas
 
 ## What is Zygarde ?
 
-[Zygarde](https://github.com/zygarde-projects/zygarde) is an open soure for automatically generating **DAO** based on **JPA**.
+[Zygarde](https://github.com/zygarde-projects/zygarde) is an open soure. One of modules called `zygarde-jpa-codegen` can automatically generating **DAO** based on **JPA**
 
 ### Usage
 
