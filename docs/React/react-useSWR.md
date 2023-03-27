@@ -48,3 +48,4 @@ And a lot [more](https://swr.vercel.app/docs/getting-started).
 + @ [vercel](https://swr.vercel.app/docs/getting-started) -swr
 + @ [TkDodo's blog](https://tkdodo.eu/blog/react-query-as-a-state-manager) -React Query as a State Manager
 + @ [jianshu](https://www.jianshu.com/p/2771cb695c81) -requestIdleCallback和requestAnimationFrame详解
++ @ [Cloudflare](https://developers.cloudflare.com/cache/about/default-cache-behavior/) - Default Cache Behavior
