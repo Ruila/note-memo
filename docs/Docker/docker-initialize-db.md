@@ -60,4 +60,4 @@ volumes:
 ```
 #### then run `docker-compose up -d`, you can see the `public.users` table.
 
-#### -> [Demo](https://github.com/Ruila/url-shortener-backend)
+#### -> [see demo here](https://github.com/Ruila/url-shortener-backend)
