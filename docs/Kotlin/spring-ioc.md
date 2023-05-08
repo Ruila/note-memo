@@ -2,7 +2,7 @@
 title: "[Spring] IoC and DI"
 ---
 
-# [Kotlin] IoC (Inversion of Control) and DI (Dependency Injection)
+# [Spring] IoC (Inversion of Control) and DI (Dependency Injection)
 
 ## IoC
 
